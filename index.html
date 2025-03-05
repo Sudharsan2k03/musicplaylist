@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion-Based Music Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Emotion-Based Music Playlist 🎶</h1>
+        <div class="input-section">
+            <label for="mood">Select your Mood:</label>
+            <select id="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="excited">Excited</option>
+                <option value="calm">Calm</option>
+                <option value="romantic">Romantic</option>
+            </select>
+
+            <label for="language">Choose Music Language:</label>
+            <select id="language">
+                <option value="tamil">Tamil</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="telugu">Telugu</option>
+                <option value="malayalam">Malayalam</option>
+                <option value="kannada">Kannada</option>
+            </select>
+
+            <button onclick="generatePlaylist()">🎶 Generate Playlist</button>
+        </div>
+    </div>
+
+    <div id="playlist" class="playlist-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
